@@ -1,0 +1,259 @@
+html {
+   overflow-x: hidden;
+   font-family: "Artemis";
+   font-size: 60px;
+   color: #800000;
+   text-align: center;
+   align-items: center;
+}
+
+body {
+   background-image: url(../img/back5.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@font-face {
+   font-family: "Artemis";
+   src: url(../fonts/Artemis\ Deco.ttf);
+}
+
+.header-logo {
+   text-align: center;
+}
+
+.header-main {
+   width: 75%;
+   position: static;
+}
+
+.a-menu {
+   text-decoration: none;
+   color: #800000;
+   position: relative;
+}
+
+.a-menu:hover {
+   color: #38ACEC;
+   box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+}
+
+.menu {
+   width: 25%;
+}
+
+.flex {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+::-webkit-scrollbar {
+   width: 0;
+}
+
+.service {
+   font-size: 70px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.services {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.services-img {
+   width: 400px;
+   height: 350px;
+}
+
+img {
+   transition: transform 0.25s;
+   filter: grayscale(40%);
+}
+
+.services-img:hover img {
+   transform: scale(1.2);
+}
+
+.rabota {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.rabota_img {
+   padding: 15px;
+}
+
+.rabota_img:hover img {
+   transform: scale(1.2);
+}
+
+hr {
+   height: 20px;
+   margin: 30px auto;
+   width: 90%;
+   background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+   position: relative;
+   border: none;
+}
+
+hr:before {
+   height: 1px;
+   position: absolute;
+   top: -1px;
+   left: 0;
+   right: 0;
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
+}
+
+.footer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+p {
+   text-align: center;
+   margin: 20px;
+}
+
+.istoria-img:hover img {
+   transform: scale(1.2);
+}
+
+.we-img:hover img {
+   transform: scale(1.2);
+}
+
+.photo-img {
+   padding: 15px;
+}
+
+.photo {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.photo-img:hover img {
+   transform: scale(1.2);
+}
+
+.contacs {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+form {
+   margin: 0 auto;
+   margin-bottom: 200px;
+   position: relative;
+   width: 41%;
+   height: 250px;
+   color: #800000;;
+}
+
+input {
+   width: 100%;
+   padding: 15px;
+   background: #f1f1f1;
+   color: #800000;;
+}
+
+.pressed-button {
+   color: #800000;
+   text-decoration: none;
+}
+
+.pressed-button:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, .35);
+   background-position: 0 0;
+}
+
+@media screen and (max-width: 720px) {
+   .header-main {
+      width: 600px;
+      margin-bottom: 100px;
+      position: relative;
+   }
+
+   .img-header {
+      height: 250px;
+      width: 350px;
+      text-align: center;
+   }
+
+   .img-rabota {
+      width: 307px;
+      height: 204px;
+   }
+
+   .img-services {
+      width: 332, 8px;
+      height: 221px;
+   }
+
+   .img-photo {
+      width: 307px;
+      height: 204px;
+   }
+
+   .img-we {
+      width: 307px;
+      height: 204px;
+   }
+
+   .hr-button {
+      margin-top: 70px;
+   }
+
+   .flex {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .img-istoria {
+      width: 307px;
+      height: 204px;
+   }
+
+   .form{
+      margin-bottom: 300px;
+   }
+
+   .img-footer{
+      width: 144px;
+      height: 106px;
+   }
+}
